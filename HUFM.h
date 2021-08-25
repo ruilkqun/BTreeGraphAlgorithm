@@ -1,0 +1,1 @@
+char HUFM(sequencetree T);

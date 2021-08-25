@@ -1,0 +1,88 @@
+# Project: The_Root_Of_Big_Tree
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = AVL.o CALCULATOR.o DIJKSTRA.o FINDTREE.o FLOYD.o HEAP.o HUFM.o main.o MATHEMATIC.o MST.o PACKAGE.o PARENTHESES_MATCH.o RUI.o THREAD.o TOPOLOGICAL_SORT.o TRAFFIC.o TRAVERSAL.o update_Dijkstra.o VISITED.o STUDENT_ACHIEVEMENT.o Schedule.o
+LINKOBJ  = AVL.o CALCULATOR.o DIJKSTRA.o FINDTREE.o FLOYD.o HEAP.o HUFM.o main.o MATHEMATIC.o MST.o PACKAGE.o PARENTHESES_MATCH.o RUI.o THREAD.o TOPOLOGICAL_SORT.o TRAFFIC.o TRAVERSAL.o update_Dijkstra.o VISITED.o STUDENT_ACHIEVEMENT.o Schedule.o
+LIBS     = -L"H:/x86/Dev-Cpp/MinGW64/lib" -L"H:/x86/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"H:/x86/Dev-Cpp/MinGW64/include" -I"H:/x86/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"H:/x86/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"H:/x86/Dev-Cpp/MinGW64/include" -I"H:/x86/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"H:/x86/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"H:/x86/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = The_Root_Of_Big_Tree.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+AVL.o: AVL.cpp
+	$(CPP) -c AVL.cpp -o AVL.o $(CXXFLAGS)
+
+CALCULATOR.o: CALCULATOR.cpp
+	$(CPP) -c CALCULATOR.cpp -o CALCULATOR.o $(CXXFLAGS)
+
+DIJKSTRA.o: DIJKSTRA.cpp
+	$(CPP) -c DIJKSTRA.cpp -o DIJKSTRA.o $(CXXFLAGS)
+
+FINDTREE.o: FINDTREE.cpp
+	$(CPP) -c FINDTREE.cpp -o FINDTREE.o $(CXXFLAGS)
+
+FLOYD.o: FLOYD.cpp
+	$(CPP) -c FLOYD.cpp -o FLOYD.o $(CXXFLAGS)
+
+HEAP.o: HEAP.cpp
+	$(CPP) -c HEAP.cpp -o HEAP.o $(CXXFLAGS)
+
+HUFM.o: HUFM.cpp
+	$(CPP) -c HUFM.cpp -o HUFM.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+MATHEMATIC.o: MATHEMATIC.cpp
+	$(CPP) -c MATHEMATIC.cpp -o MATHEMATIC.o $(CXXFLAGS)
+
+MST.o: MST.cpp
+	$(CPP) -c MST.cpp -o MST.o $(CXXFLAGS)
+
+PACKAGE.o: PACKAGE.cpp
+	$(CPP) -c PACKAGE.cpp -o PACKAGE.o $(CXXFLAGS)
+
+PARENTHESES_MATCH.o: PARENTHESES_MATCH.cpp
+	$(CPP) -c PARENTHESES_MATCH.cpp -o PARENTHESES_MATCH.o $(CXXFLAGS)
+
+RUI.o: RUI.cpp
+	$(CPP) -c RUI.cpp -o RUI.o $(CXXFLAGS)
+
+THREAD.o: THREAD.cpp
+	$(CPP) -c THREAD.cpp -o THREAD.o $(CXXFLAGS)
+
+TOPOLOGICAL_SORT.o: TOPOLOGICAL_SORT.cpp
+	$(CPP) -c TOPOLOGICAL_SORT.cpp -o TOPOLOGICAL_SORT.o $(CXXFLAGS)
+
+TRAFFIC.o: TRAFFIC.cpp
+	$(CPP) -c TRAFFIC.cpp -o TRAFFIC.o $(CXXFLAGS)
+
+TRAVERSAL.o: TRAVERSAL.cpp
+	$(CPP) -c TRAVERSAL.cpp -o TRAVERSAL.o $(CXXFLAGS)
+
+update_Dijkstra.o: update_Dijkstra.cpp
+	$(CPP) -c update_Dijkstra.cpp -o update_Dijkstra.o $(CXXFLAGS)
+
+VISITED.o: VISITED.cpp
+	$(CPP) -c VISITED.cpp -o VISITED.o $(CXXFLAGS)
+
+STUDENT_ACHIEVEMENT.o: STUDENT_ACHIEVEMENT.cpp
+	$(CPP) -c STUDENT_ACHIEVEMENT.cpp -o STUDENT_ACHIEVEMENT.o $(CXXFLAGS)
+
+Schedule.o: Schedule.cpp
+	$(CPP) -c Schedule.cpp -o Schedule.o $(CXXFLAGS)
